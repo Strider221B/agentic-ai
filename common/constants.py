@@ -6,4 +6,5 @@ class Constants:
     GOOGLE_API_KEY = 'GOOGLE_API_KEY'
     OPEN_AI_CONTENT = 'content'
     OPEN_AI_ROLE = 'role'
+    OPEN_AI_SYSTEM = 'system'
     OPEN_AI_USER = 'user'
