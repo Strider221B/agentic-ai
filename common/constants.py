@@ -7,4 +7,8 @@ class Constants:
     OPEN_AI_CONTENT = 'content'
     OPEN_AI_ROLE = 'role'
     OPEN_AI_SYSTEM = 'system'
+    OPEN_AI_TOOL_CALL = 'tool_calls'
     OPEN_AI_USER = 'user'
+    PUSHOVER_TOKEN = 'PUSHOVER_TOKEN'
+    PUSHOVER_URL = 'https://api.pushover.net/1/messages.json'
+    PUSHOVER_USER = 'PUSHOVER_USER'
