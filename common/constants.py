@@ -1,0 +1,9 @@
+class Constants:
+
+    GEMINI_BASE_URL = 'https://generativelanguage.googleapis.com/v1beta/openai/'
+    GEMINI_MODEL_LITE = 'gemini-2.5-flash-lite-preview-06-17'
+    GEMINI_MODEL_MEDIUM = 'gemini-2.5-flash'
+    GOOGLE_API_KEY = 'GOOGLE_API_KEY'
+    OPEN_AI_CONTENT = 'content'
+    OPEN_AI_ROLE = 'role'
+    OPEN_AI_USER = 'user'
