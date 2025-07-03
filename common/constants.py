@@ -1,5 +1,6 @@
 class Constants:
 
+    EMAIL_ID = 'EMAIL_ID'
     GEMINI_BASE_URL = 'https://generativelanguage.googleapis.com/v1beta/openai/'
     GEMINI_MODEL_LITE = 'gemini-2.5-flash-lite-preview-06-17'
     GEMINI_MODEL_MEDIUM = 'gemini-2.5-flash'
@@ -12,3 +13,4 @@ class Constants:
     PUSHOVER_TOKEN = 'PUSHOVER_TOKEN'
     PUSHOVER_URL = 'https://api.pushover.net/1/messages.json'
     PUSHOVER_USER = 'PUSHOVER_USER'
+    SENDGRID_API_KEY = 'SENDGRID_API_KEY'
