@@ -1,7 +1,7 @@
 from agents import Agent, GuardrailFunctionOutput, Runner, input_guardrail
 
 from common.open_ai_gemini_client import OpenAIGeminiClient
-from open_ai_02.guardrails.name_check_output import NameCheckOutput
+from open_ai_02.output_types.name_check_output import NameCheckOutput
 
 class CheckNameGuardrail:
 

@@ -48,6 +48,7 @@ class SendGridEmail:
         mail = Mail(from_email, to_email, subject, content).get()
         response = sg.client.mail.send.post(request_body=mail)
         print(f'Email sent to: {to_email_id} - Response Code: {response.status_code}')
+        print(f'Mail body: \n{mail_body}')
 
     @staticmethod
     def _get_html_email_instructions() -> str:
