@@ -1,6 +1,7 @@
 class Constants:
 
-    EMAIL_ID = 'EMAIL_ID'
+    EMAIL_ID_FROM = 'EMAIL_ID_FROM'
+    EMAIL_ID_TO = 'EMAIL_ID_TO'
     GEMINI_BASE_URL = 'https://generativelanguage.googleapis.com/v1beta/openai/'
     GEMINI_MODEL_LITE = 'gemini-2.5-flash-lite-preview-06-17'
     GEMINI_MODEL_MEDIUM = 'gemini-2.5-flash'

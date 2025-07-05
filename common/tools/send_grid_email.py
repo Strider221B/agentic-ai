@@ -13,7 +13,8 @@ class SendGridEmail:
 
     EMAIL_TYPE_HTML = 'text/html'
     EMAIL_TYPE_PLAIN = 'text/plain'
-    _EMAIL_ID = os.environ.get(Constants.EMAIL_ID)
+    _EMAIL_ID_FROM = os.environ.get(Constants.EMAIL_ID_FROM)
+    _EMAIL_ID_TO = os.environ.get(Constants.EMAIL_ID_TO)
     _SENDGRID_KEY = os.environ.get(Constants.SENDGRID_API_KEY)
 
     @staticmethod
@@ -39,9 +40,9 @@ class SendGridEmail:
 
     @classmethod
     def send_email(cls, subject: str, mail_body: str, email_type: str, to_email_id: str = None):
-        to_email_id = to_email_id if to_email_id else cls._EMAIL_ID
+        to_email_id = to_email_id if to_email_id else cls._EMAIL_ID_TO
         sg = sendgrid.SendGridAPIClient(api_key=cls._SENDGRID_KEY)
-        from_email = Email(cls._EMAIL_ID)
+        from_email = Email(cls._EMAIL_ID_FROM)
         to_email = To(to_email_id)
         content = Content(email_type, mail_body)
         mail = Mail(from_email, to_email, subject, content).get()
