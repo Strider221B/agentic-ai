@@ -2,6 +2,7 @@ import os
 from dotenv import load_dotenv
 
 import sendgrid
+from agents import function_tool
 from sendgrid.helpers.mail import Mail, Email, To, Content
 
 from common.constants import Constants
@@ -13,8 +14,14 @@ class SendGridEmail:
     _EMAIL_ID = os.environ.get(Constants.EMAIL_ID)
     _SENDGRID_KEY = os.environ.get(Constants.SENDGRID_API_KEY)
 
+    @staticmethod
+    @function_tool
+    def send_email_tool(subject: str, mail_body: str):
+        # function_tool cannot be called directly so have split it into 2 separate methods.
+        SendGridEmail.send_email(subject, mail_body, None)
+
     @classmethod
-    def send_email(cls, mail_body: str, subject: str, to_email_id: str = None):
+    def send_email(cls, subject: str, mail_body: str, to_email_id: str = None):
         to_email_id = to_email_id if to_email_id else cls._EMAIL_ID
         sg = sendgrid.SendGridAPIClient(api_key=cls._SENDGRID_KEY)
         from_email = Email(cls._EMAIL_ID)
