@@ -6,6 +6,7 @@ import asyncio
 from common.constants import Constants
 from common.open_ai_gemini_client import OpenAIGeminiClient
 from common.tools.send_grid_email import SendGridEmail
+from open_ai_02.guardrails.check_name_guardrail import CheckNameGuardrail
 
 load_dotenv(override=True)
 
@@ -41,6 +42,23 @@ class SalesAgent:
     def send_email_using_handovers(self):
         result = asyncio.run(self._send_emails_using_handoffs())
         print(result)
+
+    def send_email_using_guardrails(self):
+        result = asyncio.run(self._send_emails_using_guardrails())
+        print(result)
+
+    async def _send_emails_using_guardrails(self):
+        emailer_agent = self._get_emailer_agent()
+        handoffs = [emailer_agent]
+        sales_agent_tools = self._get_sales_agents_as_tools()
+        careful_sales_manager = Agent(name="Sales Manager",
+                                      instructions=self._get_sales_manager_instructions_with_handovers(),
+                                      tools=sales_agent_tools,
+                                      handoffs=handoffs,
+                                      model=OpenAIGeminiClient.get_model(),
+                                      input_guardrails=[CheckNameGuardrail.guardrail_against_name])
+        message = "Send out a cold sales email addressed to Dear CEO from Alice"
+        return await Runner.run(careful_sales_manager, message)
 
     async def _send_emails_using_handoffs(self) -> RunResult:
         emailer_agent = self._get_emailer_agent()
@@ -168,7 +186,8 @@ if __name__ == '__main__':
     # sales_agent.print_sample_email_for_all_agents("Write a cold sales email")
     # sales_agent.print_best_email_from_all_agent("Write a cold sales email")
     # sales_agent.send_email_as_tools()
-    sales_agent.send_email_using_handovers()
+    # sales_agent.send_email_using_handovers()
+    sales_agent.send_email_using_guardrails()
 
 # Output:
 # sales_agent.send_email_as_tools() -->
@@ -201,3 +220,29 @@ if __name__ == '__main__':
 # - 0 output guardrail result(s)
 # (See `RunResult` for more details)
 # OPENAI_API_KEY is not set, skipping trace export
+
+# sales_agent.send_email_using_guardrails()
+# Traceback (most recent call last):
+#   File "/home/somesh/Git/agentic-ai/open_ai_02/sales_agent_02.py", line 190, in <module>
+#     sales_agent.send_email_using_guardrails()
+#   File "/home/somesh/Git/agentic-ai/open_ai_02/sales_agent_02.py", line 47, in send_email_using_guardrails
+#     result = asyncio.run(self._send_emails_using_guardrails())
+#              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#   File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+#     return runner.run(main)
+#            ^^^^^^^^^^^^^^^^
+#   File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+#     return self._loop.run_until_complete(task)
+#            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#   File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+#     return future.result()
+#            ^^^^^^^^^^^^^^^
+#   File "/home/somesh/Git/agentic-ai/open_ai_02/sales_agent_02.py", line 61, in _send_emails_using_guardrails
+#     return await Runner.run(careful_sales_manager, message)
+#            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#   File "/home/somesh/PythonEnvs/P3.12_LLM/lib/python3.12/site-packages/agents/run.py", line 218, in run
+#     input_guardrail_results, turn_result = await asyncio.gather(
+#                                            ^^^^^^^^^^^^^^^^^^^^^
+#   File "/home/somesh/PythonEnvs/P3.12_LLM/lib/python3.12/site-packages/agents/run.py", line 857, in _run_input_guardrails
+#     raise InputGuardrailTripwireTriggered(result)
+# agents.exceptions.InputGuardrailTripwireTriggered: Guardrail InputGuardrail triggered tripwire
