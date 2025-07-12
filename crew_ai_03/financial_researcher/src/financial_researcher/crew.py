@@ -1,6 +1,7 @@
 from crewai import Agent, Crew, Process, Task
-from crewai.project import CrewBase, agent, crew, task
 from crewai.agents.agent_builder.base_agent import BaseAgent
+from crewai.project import CrewBase, agent, crew, task
+from crewai_tools import SerperDevTool # This should not be crewai.tool
 from typing import List
 
 @CrewBase
@@ -12,7 +13,7 @@ class FinancialResearcher():
 
     @agent
     def researcher(self) -> Agent:
-        return Agent(config=self.agents_config['researcher'], verbose=True)
+        return Agent(config=self.agents_config['researcher'], tools=[SerperDevTool()], verbose=True)
 
     @agent
     def analyst(self) -> Agent:
