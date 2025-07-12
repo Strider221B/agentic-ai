@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 import dotenv
-import os
 import sys
 import warnings
 from datetime import datetime

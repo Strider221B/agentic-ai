@@ -15,3 +15,4 @@ class Constants:
     PUSHOVER_URL = 'https://api.pushover.net/1/messages.json'
     PUSHOVER_USER = 'PUSHOVER_USER'
     SENDGRID_API_KEY = 'SENDGRID_API_KEY'
+    SERPER_API_KEY = 'SERPER_API_KEY'
