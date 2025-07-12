@@ -1,0 +1,22 @@
+{
+    "research_list": [
+        {
+            "name": "Equinor",
+            "market_position": "Major player in offshore wind energy, notable for its role in the Dogger Bank Wind Farm. Also involved in oil and gas production and has a focus on innovation in the energy sector.",
+            "future_outlook": "Expects to deliver industry-leading return on average capital employed (above 15% by 2030). Positive outlook for European gas prices. Forecasted ROE is expected to be 17.5% in 3 years.",
+            "investment_potential": "Some analysts predict a downside of -16.22% from the current price, while others see it as undervalued with market-beating potential, highlighting strong performance in 2024 (21% ROCE, 4% production growth) and a commitment to capital distribution targets for 2025."
+        },
+        {
+            "name": "SLB",
+            "market_position": "A leader in oilfield innovations and AI applications within the oil and gas sector, focusing on operational efficiency and technology.",
+            "future_outlook": "Committed to returning over 50% of free cash flow to shareholders, potentially exceeding this in 2025. Expected to outperform the market in the next 12 months. Poised for growth in 2025 driven by strong financials, AI, and strategic debt management.",
+            "investment_potential": "Analysts predict an average 12-month price target with a 23.27% upside potential. Some forecasts suggest a drop in share value by August 2025, while others see it as a strong contender in the energy sector with substantial growth potential. It presents a compelling long-term investment."
+        },
+        {
+            "name": "bp",
+            "market_position": "A significant player in the oil and gas industry, exploring strategic expansion and new business development, such as redeveloping oilfields in Libya. Known for its market gains outperforming the industry, strong dividend yield, and robust free cash flow outlook.",
+            "future_outlook": "Aims to focus its portfolio on core integrated positions and reduce investment to ~$3bn by 2027, while taking clear actions to improve performance. Positive production outlook. Analysts have a \"Hold\" recommendation with a potential upside.",
+            "investment_potential": "Some analysts suggest a potential 46% return over the next 12 months. The company's 6.14% dividend yield and robust free cash flow outlook are attractive. However, Q1 profit was below analyst forecasts."
+        }
+    ]
+}

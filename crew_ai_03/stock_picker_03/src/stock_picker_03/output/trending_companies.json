@@ -1,0 +1,19 @@
+{
+    "companies": [
+        {
+            "name": "Iberdrola",
+            "ticker": "IBE",
+            "reason": "This company is trending due to its substantial co-investment in UK offshore wind projects with Masdar. This partnership is notable as it represents one of the largest offshore wind transactions in recent times, highlighting Iberdrola's commitment to renewable energy expansion."
+        },
+        {
+            "name": "CPC Corporation, Taiwan",
+            "ticker": "TT: CPC",
+            "reason": "CPC Corporation is in the news because it is reportedly looking to acquire US shale gas assets. This move signals a potential expansion into new markets and a focus on natural gas resources, making it a company of interest in the current energy landscape."
+        },
+        {
+            "name": "Sunrun Inc.",
+            "ticker": "RUN",
+            "reason": "Sunrun is trending due to the dynamic news surrounding US clean energy policies, specifically concerning tax credits for solar and wind projects. The company is experiencing market volatility influenced by these policy shifts, with some analysts upgrading its rating while others express caution, making it a focal point in the renewable energy sector."
+        }
+    ]
+}
