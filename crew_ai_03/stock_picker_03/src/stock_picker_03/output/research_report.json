@@ -1,22 +1,22 @@
 {
     "research_list": [
         {
-            "name": "Equinor",
-            "market_position": "Major player in offshore wind energy, notable for its role in the Dogger Bank Wind Farm. Also involved in oil and gas production and has a focus on innovation in the energy sector.",
-            "future_outlook": "Expects to deliver industry-leading return on average capital employed (above 15% by 2030). Positive outlook for European gas prices. Forecasted ROE is expected to be 17.5% in 3 years.",
-            "investment_potential": "Some analysts predict a downside of -16.22% from the current price, while others see it as undervalued with market-beating potential, highlighting strong performance in 2024 (21% ROCE, 4% production growth) and a commitment to capital distribution targets for 2025."
+            "name": "Kinder Morgan",
+            "market_position": "Kinder Morgan is a major player in the North American midstream energy sector, with extensive infrastructure for transporting and processing natural gas, refined products, and crude oil. Its recent Q2 2025 earnings report showed increased profits driven by natural gas demand, and the acquisition of a natural gas gathering and processing system further strengthens its position in this area.",
+            "future_outlook": "The company has a positive outlook, with projected increases in dividends and Adjusted EBITDA for 2025. A growing project backlog of $9.3 billion and strong demand for LNG are key drivers for future growth. Analysts generally have a 'Buy' rating on the stock.",
+            "investment_potential": "With a projected 2% increase in dividends for 2025 and a focus on expanding its natural gas infrastructure, Kinder Morgan presents potential for income and growth. Analyst price targets suggest a positive outlook for the stock in the coming year."
         },
         {
-            "name": "SLB",
-            "market_position": "A leader in oilfield innovations and AI applications within the oil and gas sector, focusing on operational efficiency and technology.",
-            "future_outlook": "Committed to returning over 50% of free cash flow to shareholders, potentially exceeding this in 2025. Expected to outperform the market in the next 12 months. Poised for growth in 2025 driven by strong financials, AI, and strategic debt management.",
-            "investment_potential": "Analysts predict an average 12-month price target with a 23.27% upside potential. Some forecasts suggest a drop in share value by August 2025, while others see it as a strong contender in the energy sector with substantial growth potential. It presents a compelling long-term investment."
+            "name": "Clean Energy Fuels Corp.",
+            "market_position": "Clean Energy Fuels Corp. is a leader in the transportation energy sector, specializing in natural gas and renewable natural gas (RNG) for vehicles. Its Q1 2025 revenue was $103.8 million, with significant sales of RNG, indicating a strong presence in the growing alternative fuels market.",
+            "future_outlook": "The company's future outlook is characterized by strong projected growth in earnings (50.6% per annum) and revenue (14.8% per annum), with EPS expected to grow by 50.9% annually. However, some reports highlight high costs and persistent losses as potential concerns.",
+            "investment_potential": "While facing challenges with costs and profitability, Clean Energy Fuels Corp. has significant growth potential driven by the increasing adoption of RNG. Analyst price targets vary, but the average suggests a substantial potential upside, making it an interesting, albeit potentially volatile, investment."
         },
         {
-            "name": "bp",
-            "market_position": "A significant player in the oil and gas industry, exploring strategic expansion and new business development, such as redeveloping oilfields in Libya. Known for its market gains outperforming the industry, strong dividend yield, and robust free cash flow outlook.",
-            "future_outlook": "Aims to focus its portfolio on core integrated positions and reduce investment to ~$3bn by 2027, while taking clear actions to improve performance. Positive production outlook. Analysts have a \"Hold\" recommendation with a potential upside.",
-            "investment_potential": "Some analysts suggest a potential 46% return over the next 12 months. The company's 6.14% dividend yield and robust free cash flow outlook are attractive. However, Q1 profit was below analyst forecasts."
+            "name": "Saturn Oil & Gas Inc.",
+            "market_position": "Saturn Oil & Gas Inc. is an upstream energy company focused on oil and gas exploration and production. The recent announcement of its substantial issuer bid results indicates significant corporate activity and market interest. The company has also seen record production and adjusted funds flow in Q1 2025.",
+            "future_outlook": "While some forecasts suggest a decline in revenue and earnings, other analyses indicate a positive trend and potential for investment gains. The company's capital return strategy, including share repurchases, and its intention to commence an inaugural substantial issuer bid are key aspects of its future outlook. Analysts caution about leverage impacting future investment and increasing vulnerability to oil price volatility.",
+            "investment_potential": "Saturn Oil & Gas Inc. offers potential upside based on analyst price targets and a positive sentiment from some AI stock analysts regarding future trends. However, concerns about leverage and potential revenue decline suggest a higher-risk investment profile. The company's recent capital return initiatives and issuer bid may appeal to investors seeking share price appreciation and reduced share count."
         }
     ]
 }

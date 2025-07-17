@@ -1,19 +1,19 @@
 {
     "companies": [
         {
-            "name": "Iberdrola",
-            "ticker": "IBE",
-            "reason": "This company is trending due to its substantial co-investment in UK offshore wind projects with Masdar. This partnership is notable as it represents one of the largest offshore wind transactions in recent times, highlighting Iberdrola's commitment to renewable energy expansion."
+            "name": "Kinder Morgan",
+            "ticker": "KMI",
+            "reason": "Trending due to its second quarter earnings report showing increased profit, driven by natural gas demand, and a recent acquisition of a natural gas gathering and processing system."
         },
         {
-            "name": "CPC Corporation, Taiwan",
-            "ticker": "TT: CPC",
-            "reason": "CPC Corporation is in the news because it is reportedly looking to acquire US shale gas assets. This move signals a potential expansion into new markets and a focus on natural gas resources, making it a company of interest in the current energy landscape."
+            "name": "Clean Energy Fuels Corp.",
+            "ticker": "CLNE",
+            "reason": "Trending as recent reports show its first quarter revenue and significant sales of RNG (Renewable Natural Gas)."
         },
         {
-            "name": "Sunrun Inc.",
-            "ticker": "RUN",
-            "reason": "Sunrun is trending due to the dynamic news surrounding US clean energy policies, specifically concerning tax credits for solar and wind projects. The company is experiencing market volatility influenced by these policy shifts, with some analysts upgrading its rating while others express caution, making it a focal point in the renewable energy sector."
+            "name": "Saturn Oil & Gas Inc.",
+            "ticker": "SOIL",
+            "reason": "Trending due to its announcement of the results of a substantial issuer bid, indicating significant activity and interest in the company."
         }
     ]
 }
